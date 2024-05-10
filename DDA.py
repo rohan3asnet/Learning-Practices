@@ -7,8 +7,8 @@ WIDTH, HEIGHT=800,600
 screen=pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("DDA Line Drawing Algorithm")
 #colors
-WHITE=(255, 255, 255)
-BLACK=(0,0,0)
+WHITE=(123, 231, 111)
+BLACK=(10,20,30)
 #Function to draw a line using DDA algorithm
 def drawLineDDA(x1,y1,x2,y2):
     dx=x2-x1
