@@ -13,14 +13,16 @@ BLACK=(10,20,30)
 def drawLineBresenham(x1,y1,x2,y2):
     dx=x2-x1
     dy=y2-y1
-    if x2>x1:
-        lx=1
-    else:
-        lx=-1
-    if y2>y1:
-        ly=1
-    else:
-        ly=-1
+    # if x2>x1:
+    #     lx=1
+    # else:
+    #     lx=-1
+    # if y2>y1:
+    #     ly=1
+    # else:
+    #     ly=-1
+    lx=1
+    ly=1
     x=x1
     y=y1
     if(dx>dy):
@@ -61,7 +63,7 @@ def main():
         #clear the screen
         screen.fill(BLACK)
         #draw aline using DDA algorithm
-        drawLineBresenham(20,20,100,100)
+        drawLineBresenham(200,20,20,200)
         #update the diplay
         pygame.display.flip()
 
